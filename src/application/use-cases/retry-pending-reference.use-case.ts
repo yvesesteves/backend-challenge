@@ -4,8 +4,8 @@ import { OutboxMessage } from '../../domain/entities/outbox-message';
 import { FailureCode } from '../../domain/enums/failure-code.enum';
 import { WagerTransactionStatus } from '../../domain/enums/wager-transaction-status.enum';
 import { WagerTransactionRejected } from '../../domain/events/wager-transaction-rejected.event';
-import { METRICS_PORT, MetricsPort } from '../ports/metrics.port';
-import { UNIT_OF_WORK, UnitOfWorkPort } from '../ports/unit-of-work.port';
+import { METRICS_PORT, type MetricsPort } from '../ports/metrics.port';
+import { UNIT_OF_WORK, type UnitOfWorkPort } from '../ports/unit-of-work.port';
 import { ProcessWagerTransactionUseCase } from './process-wager-transaction.use-case';
 
 @Injectable()

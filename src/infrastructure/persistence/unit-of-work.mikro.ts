@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { EntityManager } from '@mikro-orm/postgresql';
-import {
+import type {
   TransactionalRepositories,
   UnitOfWorkPort,
 } from '../../application/ports/unit-of-work.port';

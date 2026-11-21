@@ -7,6 +7,7 @@
     "start:dev": "bun --watch src/main.ts",
     "build": "bun build src/main.ts --outdir dist --target bun",
     "typecheck": "tsc --noEmit",
+    "dev": "bun run --watch src/main.ts",
     "migration:up": "bun run src/infrastructure/persistence/migrate.ts up",
     "migration:down": "bun run src/infrastructure/persistence/migrate.ts down",
     "migration:fresh": "bun run src/infrastructure/persistence/migrate.ts fresh",
@@ -14,6 +15,7 @@
     "test:unit": "bun test test/unit",
     "test:integration": "bun test test/integration",
     "test:concurrency": "bun test test/concurrency"
+    
   },
   "dependencies": {
     "@aws-sdk/client-sqs": "^3.700.0",

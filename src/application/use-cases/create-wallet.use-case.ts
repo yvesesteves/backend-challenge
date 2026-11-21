@@ -7,7 +7,7 @@ import { LedgerDirection } from '../../domain/enums/ledger-direction.enum';
 import { DuplicateWalletError } from '../../domain/errors/domain.error';
 import { computePayloadHash } from '../../domain/services/payload-hash.service';
 import { Money, MoneyProps } from '../../domain/value-objects/money';
-import { UNIT_OF_WORK, UnitOfWorkPort } from '../ports/unit-of-work.port';
+import { UNIT_OF_WORK, type UnitOfWorkPort } from '../ports/unit-of-work.port';
 
 export interface CreateWalletInput {
   playerId: string;

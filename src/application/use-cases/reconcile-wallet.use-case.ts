@@ -2,8 +2,8 @@ import { Inject, Injectable, Logger, Optional } from '@nestjs/common';
 import { LedgerDirection } from '../../domain/enums/ledger-direction.enum';
 import { NotFoundError } from '../../domain/errors/domain.error';
 import { Money, MoneyProps } from '../../domain/value-objects/money';
-import { METRICS_PORT, MetricsPort } from '../ports/metrics.port';
-import { UNIT_OF_WORK, UnitOfWorkPort } from '../ports/unit-of-work.port';
+import { METRICS_PORT, type MetricsPort } from '../ports/metrics.port';
+import { UNIT_OF_WORK, type UnitOfWorkPort } from '../ports/unit-of-work.port';
 
 export interface ReconcileWalletOutput {
   walletId: string;

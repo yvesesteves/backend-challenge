@@ -11,7 +11,7 @@ import {
   Res,
   UseGuards,
 } from '@nestjs/common';
-import { Response } from 'express';
+import type { Response } from 'express';
 import { ProcessWagerTransactionUseCase } from '../../application/use-cases/process-wager-transaction.use-case';
 import { WalletQueriesUseCase } from '../../application/use-cases/queries.use-case';
 import { WagerTransactionStatus } from '../../domain/enums/wager-transaction-status.enum';

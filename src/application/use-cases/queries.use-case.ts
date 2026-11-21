@@ -2,7 +2,7 @@ import { Inject, Injectable } from '@nestjs/common';
 import { WagerTransaction } from '../../domain/entities/wager-transaction';
 import { NotFoundError } from '../../domain/errors/domain.error';
 import { MoneyProps } from '../../domain/value-objects/money';
-import { UNIT_OF_WORK, UnitOfWorkPort } from '../ports/unit-of-work.port';
+import { UNIT_OF_WORK, type UnitOfWorkPort } from '../ports/unit-of-work.port';
 
 @Injectable()
 export class WalletQueriesUseCase {

@@ -19,11 +19,11 @@ import { WagerTransactionRejected } from '../../domain/events/wager-transaction-
 import { WalletBalanceChanged } from '../../domain/events/wallet-balance-changed.event';
 import { computePayloadHash } from '../../domain/services/payload-hash.service';
 import { Money, MoneyProps } from '../../domain/value-objects/money';
-import { METRICS_PORT, MetricsPort } from '../ports/metrics.port';
+import { METRICS_PORT, type MetricsPort } from '../ports/metrics.port';
 import {
-  TransactionalRepositories,
+  type TransactionalRepositories,
   UNIT_OF_WORK,
-  UnitOfWorkPort,
+  type UnitOfWorkPort,
 } from '../ports/unit-of-work.port';
 
 export interface ProcessWagerTransactionInput {

@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { Counter, Gauge, Histogram, Registry, collectDefaultMetrics } from 'prom-client';
-import { MetricsPort } from '../../application/ports/metrics.port';
+import type { MetricsPort } from '../../application/ports/metrics.port';
 
 @Injectable()
 export class PrometheusMetricsService implements MetricsPort {

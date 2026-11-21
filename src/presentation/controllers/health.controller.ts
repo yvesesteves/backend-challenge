@@ -1,7 +1,7 @@
 import { GetQueueAttributesCommand, SQSClient } from '@aws-sdk/client-sqs';
 import { EntityManager } from '@mikro-orm/postgresql';
 import { Controller, Get, HttpStatus, Inject, Optional, Res } from '@nestjs/common';
-import { Response } from 'express';
+import type { Response } from 'express';
 
 export const SQS_CLIENT = Symbol('SQS_CLIENT');
 
